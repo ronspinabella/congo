@@ -11,12 +11,16 @@ autoSwitchAppearance = true
 
 enableSearch = false
 enableCodeCopy = false
+enableImageLazyLoading = true
+enableImageWebp = true
 
 # robots = ""
+fingerprintAlgorithm = "sha256"
 
 [header]
   layout = "basic" # valid options: basic, hamburger, hybrid, custom
   # logo = "img/logo.jpg"
+  # logoDark = "img/dark-logo.jpg"
   showTitle = true
 
 [footer]
@@ -47,7 +51,7 @@ enableCodeCopy = false
   showTaxonomies = false
   showWordCount = false
   showComments = false
-  # sharingLinks = ["facebook", "twitter", "mastodon", "pinterest", "reddit", "linkedin", "email"]
+  # sharingLinks = ["facebook", "x-twitter", "mastodon", "pinterest", "reddit", "linkedin", "email", "telegram", "line", "weibo"]
 
 [list]
   showBreadcrumbs = false
@@ -65,7 +69,11 @@ enableCodeCopy = false
 
 [fathomAnalytics]
   # site = "ABC12345"
-  # domain = "llama.yoursite.com"
+
+[plausibleAnalytics]
+  # domain = "blog.yoursite.com"
+  # event = ""
+  # script = ""
 
 [verification]
   # google = ""
