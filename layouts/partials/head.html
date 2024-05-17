@@ -23,7 +23,7 @@
   {{- end }}
 
   {{/* Robots Meta Tag for Noindex */}}
-  {{ if in (slice "taxonomy" "taxonomyTerm") .Kind }}
+  {{ if or (eq .Kind "taxonomy") (eq .Kind "taxonomyTerm") }}
     <meta name="robots" content="noindex" />
   {{ else }}
     {{ with .Site.Params.robots }}
